@@ -1,0 +1,5 @@
+<launch>
+  <arg name="type" default="udepth"/>
+  <param name="depth_type" value="$(arg type)"/>
+  <node name="depth" pkg="depth" type="main.py" output="screen" />
+</launch>

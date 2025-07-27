@@ -1,0 +1,52 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/evintjh/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/evintjh/catkin_ws/src/FD_sonar_driver/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/amcl/include/**",
+        "/home/evintjh/catkin_ws/src/average_filter/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/base_local_planner/include/**",
+        "/home/evintjh/catkin_ws/src/BehaviorTree.CPP/include/**",
+        "/home/evintjh/catkin_ws/src/bx_msgs/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/carrot_planner/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/clear_costmap_recovery/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/costmap_2d/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/dwa_local_planner/include/**",
+        "/home/evintjh/catkin_ws/src/gazebo_ros_battery/include/**",
+        "/home/evintjh/catkin_ws/src/jackal_stuffs/geographic_info/geodesy/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/global_planner/include/**",
+        "/home/evintjh/catkin_ws/src/jackal_stuffs/LMS1xx/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/map_server/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/move_base/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/move_slow_and_clear/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/nav_core/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/navfn/include/**",
+        "/home/evintjh/catkin_ws/src/octomap_mapping/octomap_server/include/**",
+        "/home/evintjh/catkin_ws/src/jackal_stuffs/openslam_gmapping/include/**",
+        "/home/evintjh/catkin_ws/src/common_tutorials/pluginlib_tutorials/include/**",
+        "/home/evintjh/catkin_ws/src/pybind11_catkin/include/**",
+        "/home/evintjh/catkin_ws/src/jackal_stuffs/robot_localization/include/**",
+        "/home/evintjh/catkin_ws/src/ROS-TCP-Endpoint/include/**",
+        "/home/evintjh/catkin_ws/src/rosparam_shortcuts/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/rotate_recovery/include/**",
+        "/home/evintjh/catkin_ws/src/rviz_visual_tools/include/**",
+        "/home/evintjh/catkin_ws/src/srdfdom/include/**",
+        "/home/evintjh/catkin_ws/src/jackal_stuffs/unique_identifier/unique_id/include/**",
+        "/home/evintjh/catkin_ws/src/navigation/voxel_grid/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

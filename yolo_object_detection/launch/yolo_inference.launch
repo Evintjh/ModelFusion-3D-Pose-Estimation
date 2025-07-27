@@ -1,0 +1,22 @@
+<launch>
+
+	<arg name="node_1_name" default="yolo_node_1" />
+	<arg name="node_2_name" default="yolo_node_2" />
+
+	<node name="$(arg node_1_name)" pkg="yolo_object_detection" type="main.py" output="screen">
+		<param name="yolo_model_name" type="string" value="$(find yolo_object_detection)/yolo_models/sauvc_model2.pt" />
+		<param name="input_image_topic" type="string" value="/sensor/camera" />
+		<param name="inference_topic" type="string" value="/$(arg node_1_name)/inference" />
+		<param name="annotated_frame_topic" type="string" value="/$(arg node_1_name)/annotated_frame_uncompressed" />
+		<param name="default" type="bool" value="true" />
+	</node>
+
+	<!-- Compress the annotated_frame to display on the remote machine -->
+	<node name="image_decompressor_node" pkg="image_transport" type="republish" 
+		args="raw in:=/$(arg node_1_name)/annotated_frame_uncompressed compressed out:=/$(arg node_1_name)/annotated_frame" output="screen" />
+
+	<!-- Decompress the camera_unity topic for yolo inference -->
+	<node name="unity_image_decompressor" pkg="image_transport" type="republish" 
+		args="compressed in:=/sensor/camera_unity raw out:=/sensor/camera" output="screen" />
+
+</launch>

@@ -1,0 +1,6 @@
+# goal
+bool turn_on_or_off
+---
+# result
+bool status
+---
