@@ -1,4 +1,4 @@
-# Multimodal-3D-Pose-Estimation
+# ModelFusion-3D-Pose-Estimation
 This repo combines Udepth and YOLO together to do a 3D pose estimation of objects underwater. This can be an alternative approach to using forward-looking sonar.
 
 ## Running YOLO
